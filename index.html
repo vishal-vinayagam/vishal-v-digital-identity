@@ -1184,6 +1184,403 @@
         width: 80%;
         outline: 0;
       }
+      @media (max-width: 860px) {
+        :root {
+          --pad: 20px;
+        }
+
+        html {
+          scroll-padding-top: 84px;
+        }
+
+        body {
+          font-size: 15px;
+          line-height: 1.6;
+        }
+
+        section {
+          padding-top: 76px;
+          padding-bottom: 76px;
+        }
+
+        .sec-h {
+          display: block;
+          margin-bottom: 34px;
+        }
+
+        .sec-n {
+          display: block;
+          font-size: 58px;
+          margin-bottom: 18px;
+        }
+
+        .sec-h h2 {
+          font-size: clamp(32px, 11vw, 48px);
+          line-height: 1;
+        }
+
+        .sec-h p {
+          margin-top: 16px;
+        }
+
+        nav {
+          top: calc(12px + env(safe-area-inset-top, 0px));
+          left: 12px;
+          right: 12px;
+          width: auto;
+          max-width: none;
+          min-height: 50px;
+          padding: 5px 7px;
+          border-radius: 17px;
+        }
+
+        nav .brand {
+          padding: 10px 11px;
+          font-size: 11px;
+        }
+
+        nav .links {
+          display: none;
+        }
+
+        nav.open .links {
+          display: flex;
+        }
+
+        #burger {
+          padding: 10px 11px;
+          border-radius: 10px;
+        }
+
+        nav .links {
+          gap: 2px;
+          padding: 8px 0 4px;
+        }
+
+        nav a.l {
+          padding: 11px 12px;
+        }
+
+        .social-nav {
+          top: calc(19px + env(safe-area-inset-top, 0px));
+          right: 20px;
+          gap: 5px;
+          z-index: 52;
+        }
+
+        .social-nav a {
+          width: 32px;
+          height: 32px;
+        }
+
+        nav:not(.open) {
+          right: 180px;
+        }
+
+        nav.open {
+          right: 12px;
+        }
+
+        nav.open .social-nav {
+          display: flex;
+        }
+
+        #top {
+          min-height: auto;
+          gap: 36px;
+          padding-top: 120px;
+          padding-bottom: 88px;
+        }
+
+        .portrait {
+          width: min(74vw, 280px);
+          max-width: none;
+          margin: 0 auto;
+          justify-self: center;
+        }
+
+        .meta.c {
+          bottom: -8%;
+          right: 1%;
+          font-size: 9px;
+        }
+
+        .hero-t h1 {
+          font-size: clamp(58px, 19vw, 100px);
+          margin-top: 24px !important;
+        }
+
+        .roles {
+          gap: 8px 16px;
+          margin: 20px 0 18px;
+        }
+
+        .hero-t p[style*="font: 300"] {
+          font-size: clamp(25px, 8vw, 36px) !important;
+          margin-bottom: 22px !important;
+        }
+
+        .hero-t p.lead {
+          font-size: 15px;
+        }
+
+        .btns {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 10px;
+          margin-top: 28px;
+        }
+
+        .btn {
+          width: 100%;
+          padding: 14px 18px;
+          text-align: center;
+        }
+
+        .status {
+          gap: 10px 18px;
+          margin-top: 32px;
+        }
+
+        .jr {
+          padding-left: 32px;
+        }
+
+        .jr .track,
+        .jr .fill {
+          left: 8px;
+        }
+
+        .node > button {
+          gap: 7px;
+          padding: 14px 0;
+        }
+
+        .node > button:before {
+          left: -29px;
+          top: 24px;
+          width: 9px;
+          height: 9px;
+        }
+
+        .node .y {
+          min-width: 0;
+          font-size: 10px;
+        }
+
+        .node .t {
+          font-size: clamp(22px, 7vw, 30px);
+        }
+
+        .det .in {
+          gap: 12px;
+          margin: 0 0 16px;
+          padding: 16px;
+          grid-template-columns: 1fr;
+        }
+
+        .det p {
+          font-size: 14px;
+        }
+
+        .cards {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .card,
+        .card.w {
+          grid-column: auto;
+          padding: 22px 19px;
+        }
+
+        .card h3 {
+          font-size: 21px;
+        }
+
+        .os {
+          min-height: 0;
+          border-radius: 14px;
+        }
+
+        .os .bar {
+          padding: 11px 14px;
+        }
+
+        .cats {
+          padding: 7px;
+          gap: 2px;
+          scrollbar-width: none;
+        }
+
+        .cats::-webkit-scrollbar {
+          display: none;
+        }
+
+        .cats button {
+          padding: 11px 12px;
+          font-size: 11px;
+        }
+
+        .pane {
+          padding: 17px;
+          gap: 8px;
+        }
+
+        .chip {
+          width: 100%;
+          justify-content: space-between;
+          padding: 11px 13px;
+          gap: 8px;
+        }
+
+        .chip small {
+          padding-left: 8px;
+          font-size: 8px;
+        }
+
+        .proj {
+          grid-template-columns: 42px minmax(0, 1fr);
+          gap: 13px;
+          padding: 25px 0;
+        }
+
+        .proj:hover {
+          padding-left: 0;
+        }
+
+        .proj .n {
+          font-size: 38px;
+        }
+
+        .proj h3 {
+          font-size: clamp(27px, 9vw, 42px);
+          line-height: 1;
+        }
+
+        .proj p {
+          margin-top: 8px;
+          font-size: 14px;
+        }
+
+        .proj .go {
+          grid-column: 2;
+          margin-top: 2px;
+          font-size: 10px;
+        }
+
+        dialog {
+          overscroll-behavior: contain;
+        }
+
+        .cs {
+          padding: 84px 20px 70px;
+        }
+
+        .cs h2 {
+          font-size: clamp(54px, 18vw, 90px);
+          overflow-wrap: anywhere;
+        }
+
+        .cs .st {
+          font-size: 21px;
+          margin-bottom: 42px;
+        }
+
+        .x {
+          top: calc(12px + env(safe-area-inset-top, 0px));
+          right: 20px;
+          padding: 9px 14px;
+        }
+
+        .flow button {
+          flex: 1 1 46%;
+          padding: 11px 10px;
+          font-size: 10px;
+        }
+
+        .eq {
+          gap: 7px 12px;
+          font-size: clamp(34px, 12vw, 58px);
+          margin-bottom: 32px;
+        }
+
+        .two {
+          gap: 38px;
+        }
+
+        .res {
+          gap: 28px;
+          padding: 23px 19px;
+          border-radius: 14px;
+        }
+
+        .res h2 {
+          font-size: clamp(38px, 13vw, 62px);
+        }
+
+        #contact h2 {
+          font-size: clamp(42px, 14vw, 72px);
+          margin-bottom: 34px;
+        }
+
+        .contact-grid {
+          gap: 22px;
+        }
+
+        .term {
+          padding: 18px 15px;
+          font-size: 12px;
+          line-height: 1.8;
+          overflow-wrap: anywhere;
+        }
+
+        .term label {
+          grid-template-columns: 62px minmax(0, 1fr);
+          gap: 5px;
+        }
+
+        .contact-visual {
+          width: 100%;
+          height: auto;
+          min-height: 240px;
+          aspect-ratio: 1 / 1;
+        }
+
+        footer {
+          padding: 42px var(--pad) 38px;
+          gap: 24px;
+        }
+
+        footer > div {
+          width: 100%;
+        }
+
+        footer a {
+          margin-left: 12px;
+        }
+
+        #to-top {
+          width: 40px;
+          height: 40px;
+          right: 14px;
+          bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+        }
+
+        #egg {
+          padding: 15px var(--pad);
+          font-size: 12px;
+        }
+      }
+      @media (max-width: 400px) {
+        nav:not(.open) {
+          right: 126px;
+        }
+
+        .social-nav a:nth-child(n + 3) {
+          display: none;
+        }
+      }
       /* reveal */
       .rv {
         opacity: 0;
